@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: test3
+  #Eureka分组
+  application:
+    name: EurekaServer
+#配置元数据信息
+eureka:
+  instance:
+    metadata-map:
+      dalao: malaoshi
