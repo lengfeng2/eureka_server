@@ -12,3 +12,10 @@ eureka:
     hostname: euk3.com
 server:
   port: 7003
+  #com.fasterxml.jackson.databind.exc.MismatchedInputException: Root name 'timestamp' does not match expected ('instance') for type [simple type, class com.netflix.appinfo.InstanceInfo]
+  #配置安全认证后，其他服务器想要注册上来 就需要账号密码，这里抛出的是权限认证
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
